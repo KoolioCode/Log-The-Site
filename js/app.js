@@ -7,6 +7,8 @@ song.onloadeddata =function(){
     playback.value = song.currentTime;
 }
 
+song.pause();
+
 function playPause(){
     if(cplay.classList.contains("fa-pause")){
         song.pause();
