@@ -109,7 +109,7 @@
     <div class="mpc">
         <div class="mpcnav">
             <div class="cir">
-                <div onclick="playPause()"><i class="fa-solid fa-angle-right" id="cplay"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="cplay"></i></div>
             </div>
             <div class="trackname">
                 <h1>
@@ -118,7 +118,7 @@
             </div>
             <div class="slider"><input type="range" value="0" id="playback"></div>
         </div>
-        <audio id="song">
+        <audio id="song" autostart="0" autostart="false" preload ="none">
             <source src="assets/audio/Square Menu koolio.mp3" type="audio/mp3">
         </audio>    
     </div>
