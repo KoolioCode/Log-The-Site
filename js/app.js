@@ -7,18 +7,7 @@ song.onloadeddata =function(){
     playback.value = song.currentTime;
 }
 
-function playPause(){
-    if(cplay.classList.contains("fa-play")){
-        song.play();
-        cplay.classList.add("fa-pause");
-        cplay.classList.remove("fa-play");
-    }
-    else{
-        song.pause();
-        cplay.classList.remove("fa-pause");
-        cplay.classList.add("fa-play");
-    }
-}
+
 
 if(song.play()){
     setInterval(() => {
