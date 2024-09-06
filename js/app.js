@@ -8,15 +8,15 @@ song.onloadeddata =function(){
 }
 
 function playPause(){
-    if(cplay.classList.contains("fa-pause")){
-        song.pause();
-        cplay.classList.remove("fa-pause");
-        cplay.classList.add("fa-play");
-    }
-    else{
+    if(cplay.classList.contains("fa-play")){
         song.play();
         cplay.classList.add("fa-pause");
         cplay.classList.remove("fa-play");
+    }
+    else{
+        song.pause();
+        cplay.classList.remove("fa-pause");
+        cplay.classList.add("fa-play");
     }
 }
 
